@@ -112,21 +112,21 @@ const startTimer = () => {
 
 /* icon assign function -> replaces random numbers with icon pairs
 when icon assigned, tile is also assigned an attribute icon variables */
-var football = `<i class="fas fa-football-ball"></i>`;
-var mask = `<i class="fas fa-ufo"></i>`;
-var pizza = `<i class="fas fa-pizza-slice"></i>`;
-var lightning = `<i class="far fa-bolt"></i>`;
-var bulb = `<i class="fal fa-lightbulb"></i>`;
-var rocket = `<i class="fas fa-rocket"></i>`;
-var bacteria = `<i class="fas fa-bacterium"></i>`;
-var kiwi = `<i class="fas fa-kiwi-bird"></i>`;
-var cocktail = `<i class="fas fa-cocktail"></i>`;
+let football = `<i class="fas fa-football-ball"></i>`;
+let mask = `<i class="fas fa-ufo"></i>`;
+let pizza = `<i class="fas fa-pizza-slice"></i>`;
+let lightning = `<i class="far fa-bolt"></i>`;
+let bulb = `<i class="fal fa-lightbulb"></i>`;
+let rocket = `<i class="fas fa-rocket"></i>`;
+let bacteria = `<i class="fas fa-bacterium"></i>`;
+let kiwi = `<i class="fas fa-kiwi-bird"></i>`;
+let cocktail = `<i class="fas fa-cocktail"></i>`;
 
 
-var selectedTile = ''
-var tileIcon;
-var tileIcons =[];
-var tileIds =[];
+let selectedTile = ''
+let tileIcon;
+let tileIcons =[];
+let tileIds =[];
 
 
 //displayTile -> function which listens for click event and displays tile value on click
