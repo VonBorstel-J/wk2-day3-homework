@@ -7,9 +7,9 @@
 
 //global variable
 
-var i = 0;
-var clicks;
-var timeScore;
+let i = 0;
+let clicks;
+let timeScore;
 
 /*start button initiates game and starts counter
 initiates game start on button press*/
@@ -21,7 +21,7 @@ const startGame = () => {
     tiles.forEach(tile => tile.addEventListener("click", displayTile));
     resetTiles();
     startButton.disabled = true;
-     console.log(randomOrderArray);
+    console.log(randomOrderArray);
     startTimer();
 }
 
@@ -61,10 +61,10 @@ const randomOrderArray = [];
 }
 
 //Set tiles variable for use throughout code
-var tiles = document.querySelectorAll(".gametile");
+let tiles = document.querySelectorAll(".gametile");
 
 const setTiles = () => {
-    for(tile of tiles){
+    for (tile of tiles){
         tile.innerHTML = randomOrderArray[i];
         i++;
     //replace numerical values with icon pairs
@@ -94,7 +94,7 @@ const setTiles = () => {
 }
 
 //Timer Function -> starts timer when game is started end when game is compvare or game is cancelled.
-var count;
+let count;
 
 const startTimer = () => {
     clearInterval(timer); //clears timer before timer starts. This fixes issue if timer is triggered again, when already running. 
@@ -131,7 +131,7 @@ let tileIds =[];
 
 //displayTile -> function which listens for click event and displays tile value on click
 tiles.forEach(tile => tile.addEventListener("click", displayTile));
-var n = 0;
+let n = 0;
 
 const displayTile = (e) => {
     
@@ -211,7 +211,7 @@ const calculateScore = () => {
 
 //additional levels of difficulty
 
-var newRGB;
+let newRGB;
 
 const generateRGBVal = () => {
 
